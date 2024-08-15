@@ -53,7 +53,7 @@ export default function App() {
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent
-        className="mt-3 hidden gap-4 rounded-[50px] border-1 border-white  lg:flex"
+        className="mt-5 hidden gap-4 rounded-[50px] border-1 border-white  lg:flex"
         justify="center"
       >
         <NavbarItem>
@@ -84,6 +84,36 @@ export default function App() {
             href="/ReactQ"
           >
             ReactQ
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link
+            className={` pe-5 ps-5 ${
+              pathname === "/Compare" ? userclasstrue : userclassfalse
+            }`}
+            href="/Compare"
+          >
+            Compare
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link
+            className={` pe-5 ps-5 ${
+              pathname === "/Rest" ? userclasstrue : userclassfalse
+            }`}
+            href="/Rest"
+          >
+            Rest
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link
+            className={` pe-5 ps-5 ${
+              pathname === "/Aceternity" ? userclasstrue : userclassfalse
+            }`}
+            href="/Aceternity"
+          >
+            Aceternity
           </Link>
         </NavbarItem>
       </NavbarContent>
